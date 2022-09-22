@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #011F3F;
+    color:#FEF2BF;
+    text-align: center;
+}
+
+.container>h1{
+    margin-top: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+}
+
+.container>section{
+    width:700px ;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+    padding: 50px 50px;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+#buttons>span{
+    height:250px;
+    width:250px;
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+
+.press{
+    opacity: 50%;
+    filter: contrast(50%);
+    transition: opacity 0.1s,filter 0.1s;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+
+@media only screen and (max-width:762px){
+    .container>section{
+        width:700px ;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
