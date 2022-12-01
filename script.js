@@ -16,6 +16,14 @@ $(document).on("keypress",(e)=>{
     }   
 });
 
+$("h1").on("click",()=>{
+    if(start==0){
+        score=-1;
+        score_inc();
+        seqence_generator();
+    }   
+});
+
 
 
 function random_gen(){
